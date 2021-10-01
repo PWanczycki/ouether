@@ -25,4 +25,6 @@ function Update()
     SKIN:Bang('!SetOption WeatherIcon ImageName "' .. img_path .. '"')
 
     --TODO: randomize temperature as proof of concept
+    tmpr = math.random(-40,40)
+    SKIN:Bang('!SetOption Temperature Text "'..tmpr..' degrees"')
 end
